@@ -11,7 +11,7 @@ const addtotask = () => {
     }
     else{
         const li = document.createElement('li');
-        li.innerHTML = `${text.value}`
+        li.innerHTML = `<p>${text.value}</p>`
         tasklist.appendChild(li);
         const span = document.createElement('span');
         span.innerHTML = `<span>&times;</span>`
@@ -25,7 +25,6 @@ const addtotask = () => {
         span.addEventListener('click', remove)
     }
     text.value = '';
-    
     
 }
 
