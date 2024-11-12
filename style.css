@@ -7,13 +7,13 @@
 .box {
     width: 100vw;
     height: 100vh;  
-    background: linear-gradient(69deg, #ffd7f8, #efabad, #a9fdfb, #e0dbe1, #b38b6d);
+    background: linear-gradient(64deg, #0b0009, #b86565, #592c34b8, #7c0202, #000000);
     position: relative;
 
 }
 
 .container {
-    background: linear-gradient(-105deg, rgb(216, 216, 222), rgb(159, 171, 255), #4e1d20);
+    background: linear-gradient(38deg, rgb(232 239 234), rgb(255 143 143), #e6d4d4);
     width: 80%;
     text-align: center;
     border-radius: 15px;
@@ -39,8 +39,8 @@
     height: 27px;
     width: 25%;
     border-radius: 5px;
-    background-color: rgb(204, 198, 237);
-    color: #510606;
+    background-color: rgb(227 100 100 / 9%);
+    color: #091a53eb;
     margin: 10% 0;
 }
 .task-list{
@@ -49,25 +49,30 @@
     margin: 10px 0px 20px 20px;
 }
 .task-list li {
-    position: relative;
+    display: flex;
     list-style: none;
     color: white;
     padding: 10px 0px;
+    gap: 5%;    
 }
-.task-list li span{
-    position: absolute;
-    right: 20px;
-    font-size: 20px;
+.task-list li .remove{ 
     color: black;
     cursor: pointer;
-    padding: 10px 0px;
     width: 20%;
-    top: 0;
-
 }
 
 .task-list li p{
     width: 70%;
     overflow-wrap: anywhere;
+    color: black;
     
+}
+.save, .edit{
+    background-color: #e16f6f;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border: 1px solid #7c1a1a;
+    border-radius: 5px;
+    color: #070410b8;
 }
